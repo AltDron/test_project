@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Аутентификация</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Регистрация email (text box)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Латинские буквы в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Цифры в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: 111222333444@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Знак ! в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: !!!!!@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Знак # в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: #####@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Знак $ в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: $$$$$@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Знак &amp; в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: &amp;&amp;&amp;&amp;&amp;@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Знак &apos; в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: &apos;&apos;&apos;&apos;&apos;@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Знак * в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: *****@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Знак + в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: +++++@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Знак — в email (БАГ)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: —————@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Появляется красная линия над строкой email, на которой написано: &quot;1. Invalid email address.&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Знак / в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: /////@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Знак = в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: =====@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Знак ? в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: ?????@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Знак ^ в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: ^^^^^@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Знак _ в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: _____@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Знак ` в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: `````@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>Знак { в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: {{{{{@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>Знак | в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: |||||@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>Знак } в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: }}}}}@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Знак ~ в email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: ~~~~~@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Точка в начале email (ошибка)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем невалидный email: .lavoh92919@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Появляется красная линия над строкой email, на которой написано: &quot;1. Invalid email address.&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Точка в конце email (ошибка)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем невалидный email: lavoh92919@aregods.com.
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Появляется красная линия над строкой email, на которой написано: &quot;1. Invalid email address.&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>Точка в email (не первая и не последняя)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: l.avoh92919@aregods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Имя хоста состоит из нескольких компонентов, разделённых точкой</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh92919@are.gods.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Имя хоста состоит из символов превышающих 63 символа</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh92919@1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>Имя хоста состоит из нескольких компонентов, разделённых точкой и превышающих 63 символа</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh92919@1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1.q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q1q.com
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>*@*.ru</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh@aregods.ru
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>*@*.net</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh@aregods.net
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>*@*.n</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh@aregods.n
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C30</id>
+				<title>*@*.! (ошибка)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh@aregods.!
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Появляется красная линия над строкой email, на которой написано: &quot;1.
+Invalid email address.&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C31</id>
+				<title>*@*.9 (БАГ)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh@aregods.9
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C32</id>
+				<title>*@-aaa.ru (ошибка)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: lavoh@-aaa.ru
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>Появляется красная линия над строкой email, на которой написано: &quot;1.
+Invalid email address.&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C33</id>
+				<title>вася@aaa.ru (БАГ)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: вася@aaa.ru
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C34</id>
+				<title>aaa@вася.ru (БАГ)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: aaa@вася.ru
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C35</id>
+				<title>aaa@aaa.ру (БАГ)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: aaa@aaa.ру
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C36</id>
+				<title>aaa@999.ru</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: aaa@999.ru
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>1. Перебрасывает на страницу полной авторизации http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C37</id>
+				<title>aaa@999.ru (ошибка)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: aaa@!#$%&amp;‘*+—/=?^_`{|}~.ru
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>Появляется красная линия над строкой email, на которой написано: &quot;1.
+Invalid email address.&quot;</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C38</id>
+				<title>口@465456.ru (ошибка)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыть браузер Chrome (Версия 103.0.5060.114 (Официальная сборка), (64 бит))
+2. Открыть страницу http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation</preconds>
+										<steps>1. Кликаем левой кнопкой мыши по полю email
+2. Указываем валидный email: 口@465456.ru
+3. Кликаем левой кнопкой мыши на кнопку &quot;Create an account&quot;</steps>
+										<expected>Появляется красная линия над строкой email, на которой написано: &quot;1.
+Invalid email address.&quot;</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
